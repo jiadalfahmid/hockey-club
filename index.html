@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey Club</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <!-- Daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+          },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              brand: 'rgb(255, 66, 64);',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-manrope">
+  <header class="w-11/12 mx-auto">
+    <!-- nav section -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a href="#" class="font-bold text-2xl"><span class="text-brand mr-1">Hockey</span>Club</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-brand font-semibold">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-brand text-white hover:bg-brand">Button</a>
+        </div>
+      </div>
+    </nav>
+    <!-- banner section -->
+    <section class="">
+
+    </section>
+  </header>
+  <main class="w-11/12 mx-auto">
+    
+  </main>
+    <footer class="footer bg-black text-white p-10 mt-20">
+      <nav>
+        <h6 class="text-white text-lg font-bold">Get In Touch</h6>
+        <p>Dit amet consectetur. Condimentum <br>adipiscing aliquam turpis placerat <br>dolor. Purus urna in sit nullam proin. </p>
+        <div class="flex items-center gap-2">
+          <i class="fa-regular fa-envelope text-brand"></i>
+          <p>hockeys@support.com</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fa-regular fa-phone text-brand"></i>
+          <p>(+62) 123-321-543</p>
+        </div>
+      </nav>
+      <nav>
+        <h6 class="text-white text-lg font-bold">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="text-white text-lg font-bold">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="text-white text-lg font-bold">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+</body>
+</html>
