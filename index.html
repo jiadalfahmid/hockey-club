@@ -30,9 +30,18 @@
         }
       }
     </script>
+    <style>
+    *{
+/*         
+    outline: 1px solid red;
+    outline-offset: -1px; */
+  
+
+    }
+    </style>
 </head>
 <body class="font-manrope">
-  <header class="w-11/12 mx-auto">
+  <header class="max-md:w-11/12 mx-auto lg:container">
     <!-- nav section -->
     <nav>
       <div class="navbar bg-base-100">
@@ -62,7 +71,7 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <a href="#" class="font-bold text-2xl"><span class="text-brand mr-1">Hockey</span>Club</a>
+          <a href="#" class="font-bold text-2xl lg:text-3xl"><span class="text-brand mr-1">Hockey</span>Club</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -74,19 +83,58 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn bg-brand text-white hover:bg-brand">Button</a>
+          <button class="btn btn-ghost btn-circle max-sm:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <a class="btn btn-error bg-brand text-white">Get Ticket</a>
         </div>
       </div>
     </nav>
     <!-- banner section -->
-    <section class="">
-
+    <section class="lg:relative">
+      <div class="carousel w-full rounded-lg max-h-[550px] lg:max-h-screen">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="images/hero.png"
+            class="w-full" />
+            <div class="absolute gap-2 md:bottom-8 md:left-8 max-sm:bottom-2 max-sm:left-[36%] max-sm:right-[36%] flex">
+              <a href="#slide2" class="btn btn-circle btn-neutral bg-black text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle btn-neutral bg-black text-white">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/141/298/520/ice-hockey-4k-for-desktop-wallpaper-preview.jpg"
+            class="w-full" />
+            <div class="absolute gap-2 md:bottom-8 md:left-8 max-sm:bottom-2 max-sm:left-[36%] max-sm:right-[36%] flex">
+              <a href="#slide1" class="btn btn-circle btn-neutral bg-black text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle btn-neutral bg-black text-white">❯</a>
+            </div>
+        </div>
+      </div>
+      <div class="card bg-black w-full lg:w-1/2 lg:absolute lg:bottom-8 max-md:mt-4 lg:right-8">
+        <div class="card-body text-white">
+          <h2 class="card-title">Meet all the heroes from the field</h2>
+          <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+      </div>
     </section>
   </header>
-  <main class="w-11/12 mx-auto">
+  <main class="max-md:w-11/12 mx-auto lg:container">
     
   </main>
-    <footer class="footer bg-black text-white p-10 mt-20">
+    <footer class="footer bg-black text-white p-10 lg:p-16 mt-20">
       <nav>
         <h6 class="text-white text-lg font-bold">Get In Touch</h6>
         <p>Dit amet consectetur. Condimentum <br>adipiscing aliquam turpis placerat <br>dolor. Purus urna in sit nullam proin. </p>
